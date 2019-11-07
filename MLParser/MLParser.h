@@ -1,6 +1,8 @@
 #pragma once
 
 #include <QtWidgets/QMainWindow>
+#include <QTableWidget>
+#include <QVBoxLayout>
 #include "ui_MLParser.h"
 
 class MLParser : public QMainWindow
@@ -12,4 +14,15 @@ public:
 
 private:
 	Ui::MLParserClass ui;
+
+	QMenu* fileMenu;
+	QAction* openAction;
+	QTableWidget* syntaxTable;
+	QVBoxLayout* mainLayout;
+
+	void initWidgets();
+
+private slots:
+	void openSlot();
+
 };
