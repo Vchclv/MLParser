@@ -36,9 +36,15 @@
     <ClCompile Include="MLParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SyntaxUnit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="MLParser.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SyntaxUnit.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
